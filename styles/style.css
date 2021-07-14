@@ -122,7 +122,7 @@ margin: 0px 10px;
     flex-grow: 0;
     margin:  0px;
 }
-..player-info h3{
+.player-info h3{
     font-size: 28px;
 }
 .player-info p{
@@ -235,4 +235,35 @@ a{
     margin: 0px 14px;
     font-size:32px;
     color: grey;
+}
+
+/*-------------------------- media screen ---------------------*/
+
+/*----------------- ---------mobile device  -----------------------*/
+@media only screen and (max-width:688px) {
+    header{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    header img{
+        width: 329px;
+height: 259.17px;
+    }
+
+    .players{
+        
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .highlights{
+        display: flex;
+        flex-direction: column;
+    }
+    .live{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+
+    
 }
